@@ -71,4 +71,8 @@ function RunCommand ($command, $command_args) {
     Start-Process -FilePath $command -ArgumentList $command_args -Wait -Passthru
 }
 
-InstallPython $env:PYTHON_VERSION $env:PYTHON_ARCH $env:PYTHON
+function main () {
+    InstallPython $env:PYTHON_VERSION $env:PYTHON_ARCH $env:PYTHON
+}
+
+main
