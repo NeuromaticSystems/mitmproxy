@@ -1,6 +1,4 @@
-version: {build}
 shallow_clone: true
-
 environment:
 
   global:
