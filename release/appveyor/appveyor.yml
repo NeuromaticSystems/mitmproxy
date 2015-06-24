@@ -47,8 +47,8 @@ install:
   - "python -c \"import struct; print(struct.calcsize('P') * 8)\""
 
   # Include OpenSSL in INCLUDE and LIB, as on https://cryptography.io/en/latest/installation/
-  - "SET LIB=C:\OpenSSL\lib\VC\static;C:\OpenSSL\lib;%LIB%"
-  - "SET INCLUDE=C:\OpenSSL\include;%INCLUDE%"
+  - "SET LIB=C:\\OpenSSL\\lib\\VC\\static;C:\\OpenSSL\\lib;%LIB%"
+  - "SET INCLUDE=C:\\OpenSSL\\include;%INCLUDE%"
 
   # Install the build dependencies of the project. If some dependencies contain
   # compiled extensions and are not provided as pre-built wheel packages,
