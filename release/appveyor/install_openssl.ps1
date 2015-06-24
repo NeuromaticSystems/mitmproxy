@@ -27,7 +27,7 @@ function DownloadOpenSSL ($url, $hash) {
 
 function InstallOpenSSL () {
     Write-Host "Installing OpenSSL"
-    RunCommand $verified "/SILENT /LOG C:\openssl.log"
+    RunCommand $verified "/LOG C:\openssl.log"
     Get-Content "C:\\openssl.log"
 }
 
