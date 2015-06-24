@@ -38,6 +38,7 @@ function RunCommand ($command, $command_args) {
 
 function main () {
     DownloadOpenSSL $env:OPENSSL_URL $env:OPENSSL_HASH
+    ls "C:/"
     InstallOpenSSL
 }
 
