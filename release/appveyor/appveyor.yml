@@ -12,9 +12,17 @@ environment:
       PYTHON_VERSION: "2.7.10"
       PYTHON_ARCH: "32"
 
+      # The OpenSSL Windows binaries tend to be offline from time to time,
+      # so we mirror them.
+      # certutil -hashfile .\Win32OpenSSL-1_0_2c.exe SHA256
+      OPENSSL_URL: "https://maximilianhils.com/upload/2015-06/Win32OpenSSL-1_0_2c.exe"
+      OPENSSL_HASH: "3e e5 c3 a1 3f d3 c5 f1 3e 20 c4 41 cc 86 f0 d8 fc 65 79 bc 0d 03 97 77 56 2b df fa f9 a8 04 cf"
+
     - PYTHON: "C:\\Python27-x64"
       PYTHON_VERSION: "2.7.10"
       PYTHON_ARCH: "64"
+      OPENSSL_URL: "https://maximilianhils.com/upload/2015-06/Win64OpenSSL-1_0_2c.exe"
+      OPENSSL_HASH: "36 5f a5 df f0 df 0f 7f 9a 39 13 e8 1a d8 b6 f8 ff 8e 70 cb 57 f4 8e 89 da 71 a6 24 11 98 70 95"
 
 install:
   - ECHO "Filesystem root:"
