@@ -36,7 +36,6 @@ function RunCommand ($command, $command_args) {
 }
 
 function main () {
-    InstallPython $env:PYTHON_VERSION $env:PYTHON_ARCH $env:PYTHON
     DownloadOpenSSL $env:OPENSSL_URL $env:OPENSSL_HASH
     InstallOpenSSL
 }
