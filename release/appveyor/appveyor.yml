@@ -31,7 +31,7 @@ install:
   - ECHO "Installed SDKs:"
   - ps: "ls \"C:/Program Files/Microsoft SDKs/Windows\""
 
-  - ps: & release\apveyor\install_openssl.ps1
+  - ps: "& release\apveyor\install_openssl.ps1"
 
   # Install Python (from the official .msi of http://python.org) and pip when
   # not already installed.
