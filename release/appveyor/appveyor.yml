@@ -49,6 +49,7 @@ install:
   # Include OpenSSL in INCLUDE and LIB, as on https://cryptography.io/en/latest/installation/
   - "SET LIB=C:\\OpenSSL\\lib\\VC\\static;C:\\OpenSSL\\lib;%LIB%"
   - "SET INCLUDE=C:\\OpenSSL\\include;%INCLUDE%"
+  - "SET PYCA_WINDOWS_LINK_TYPE=dynamic"
 
   # Install the build dependencies of the project. If some dependencies contain
   # compiled extensions and are not provided as pre-built wheel packages,
